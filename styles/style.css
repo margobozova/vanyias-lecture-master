@@ -9,7 +9,12 @@ body {
     justify-content: center;
     overflow: hidden;
 }
-
+#photo-input {
+    display: none;
+}
+.photo-uploader {
+    text-align: center;
+}
 #application {
     display: flex;
     width: 80vw;
@@ -119,15 +124,18 @@ body {
     background-color: #eee8aa;
 }
 
-button {
+.photo-uploader label, button {
     background-color: rgba(147, 128, 108, 0.1);
     color: #666;
     font: inherit;
     font-weight: 400;
     border: 1px solid rgba(147, 128, 108, 0.25);
-    padding: .5em .75em
+    padding: .5em .75em;
 }
 
-button:hover {
+.photo-uploader label, button:hover {
     cursor: pointer
+}
+.photo-uploader label {
+    display: inline-block;
 }
